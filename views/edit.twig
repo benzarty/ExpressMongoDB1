@@ -1,0 +1,25 @@
+<html>
+<body>
+<h1>
+
+{{title}}
+</h1>
+
+<form action="/contact/edit/{{ cont._id }}" method="POST">
+ 
+<label for="FullName">FullName
+</label>
+<input type="text" name="FullName" placeholder="name" value={{cont.FullName}}>
+
+
+<label for="Phone">Phone
+</label>
+<input type="text" name="Phone" placeholder="Phone" value={{cont.Phone}}>
+
+<input type="submit" value="add">
+
+</form>
+
+</body>
+
+</html>

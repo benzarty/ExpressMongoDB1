@@ -1,0 +1,14 @@
+<html>
+<body>
+<h1> {{ title }} </h1>
+<ul>
+ {% for c in cont %} 
+ <li>{{ c.FullName }} <a href="/contact/edit/{{c.id}}">edit</a>
+ <a href="/contact/delete/{{c.id}}">delete</a>
+ 
+ 
+ </li>
+ {% endfor %} 
+</ul>
+</body>
+</html>
